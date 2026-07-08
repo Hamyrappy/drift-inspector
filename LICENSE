@@ -20,7 +20,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-The claim datasets (data/claims/, data/clusters/, data/claims_sources/, and the
-CSV/TeX data artifacts under artifacts/) are derived from ACL Anthology abstracts
-and are licensed CC BY 4.0.
