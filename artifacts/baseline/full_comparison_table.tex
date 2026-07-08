@@ -1,0 +1,26 @@
+\begin{table*}[p]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{\textbf{Full method comparison across all evaluation dimensions.} \emph{Intrinsic} metrics (C$_v$, NPMI, Div.)\ are computed on the full evaluation corpus (4\,488 papers, all years). \emph{SToP alignment} uses the 2020--2021 matched subset (653 papers): Purity is computed on all matched papers; LRAP, nDCG@1, V-measure, and PairF1 are computed on the subset of documents assigned to at least one topic cluster (Coverage). Methods are grouped by representation granularity: bag-of-words (LDA, NMF), abstract-level neural (BERTopic variants), sentence-level neural (SentSPECTER variants), and claim-level neural (ACC variants, ours). \textbf{Bold}: best value in each column.}
+\label{tab:full_comparison_appendix}
+\begin{tabular}{l r | r r r r | r r r r r r}
+\toprule
+ & & \multicolumn{4}{c|}{\textbf{Intrinsic (all years)}} & \multicolumn{6}{c}{\textbf{SToP Alignment (2020--2021)}} \\
+\cmidrule(lr){3-6}\cmidrule(l){7-12}
+\textbf{Method} & $K$ & C$_v$ & NPMI & Div. & Noise\% & Pur. & Cov.\% & LRAP & nDCG@1 & V & PairF1 \\
+\midrule
+LDA & 30 & 0.5048 & 0.0486 & 0.650 & 0.0 & 0.2445 & 100.0 & 0.5080{\scriptsize\,$\pm$\,0.0292} & 0.3289{\scriptsize\,$\pm$\,0.0397} & 0.2777 & 0.1704 \\
+NMF & 30 & 0.6628 & 0.1261 & \textbf{0.870} & 0.0 & 0.2935 & 100.0 & 0.5852{\scriptsize\,$\pm$\,0.0355} & 0.4450{\scriptsize\,$\pm$\,0.0433} & 0.3239 & 0.1859 \\
+\midrule
+BERTopic-SPECTER2 & 52 & \textbf{0.6991} & \textbf{0.1497} & 0.740 & 25.0 & 0.3237 & 100.0 & 0.6506{\scriptsize\,$\pm$\,0.0366} & 0.5151{\scriptsize\,$\pm$\,0.0478} & 0.4686 & 0.2894 \\
+BERTopic-MPNet & 60 & 0.6662 & 0.1309 & 0.745 & 21.4 & 0.3267 & 100.0 & 0.6508{\scriptsize\,$\pm$\,0.0317} & 0.5087{\scriptsize\,$\pm$\,0.0427} & 0.4565 & 0.2339 \\
+\midrule
+SentSPECTER & 187 & 0.5493 & 0.0655 & 0.559 & 2.7 & 0.6544 & 97.9 & 0.6679{\scriptsize\,$\pm$\,0.0311} & 0.5403{\scriptsize\,$\pm$\,0.0417} & 0.5319 & 0.2677 \\
+SentSPECTER-top30 & 30 & 0.5991 & 0.1121 & 0.803 & 20.5 & 0.4721 & 79.2 & 0.6367{\scriptsize\,$\pm$\,0.0460} & 0.5117{\scriptsize\,$\pm$\,0.0557} & 0.4711 & 0.3651 \\
+\midrule
+ACC \textit{(ours)} & 80 & 0.5205 & 0.0395 & 0.705 & 14.6 & \textbf{0.6888} & 83.9 & 0.6741{\scriptsize\,$\pm$\,0.0383} & 0.5795{\scriptsize\,$\pm$\,0.0464} & \textbf{0.5705} & 0.3607 \\
+ACC-top30 & 30 & 0.5668 & 0.0579 & 0.773 & 29.2 & 0.6181 & 70.6 & \textbf{0.6935}{\scriptsize\,$\pm$\,0.0362} & \textbf{0.5956}{\scriptsize\,$\pm$\,0.0420} & 0.5522 & \textbf{0.4033} \\
+\bottomrule
+\end{tabular}
+\end{table*}

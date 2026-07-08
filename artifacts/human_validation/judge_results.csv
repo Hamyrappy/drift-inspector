@@ -1,0 +1,181 @@
+item_id,judge_verdict,judge_main_issue,judge_reason,judge_confidence,judge_model,judged_at
+1,GOOD,none,The claim is supported by the abstract and describes a specific finding about the effectiveness of debiasing techniques.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+2,GOOD,none,The claim is a direct finding supported by the abstract and describes a concrete aspect of model behavior.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+3,GOOD,none,The claim is supported by the abstract as an empirical finding of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+4,BAD,unsupported,"The abstract claims state-of-the-art performance on specific benchmarks but does not claim a universal solution across tasks, domains, and languages.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+5,BAD,background_context,"The first part of the claim is general background context, and the second part is a specific detail about the benchmark's data generation, not a standalone contribution.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+6,BAD,overgeneralized,"The claim overgeneralizes the contribution by stating it establishes a universal solution across tasks, domains, and languages, which is not supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+7,BAD,background_context,The claim describes general background context and motivation rather than a specific contribution of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+8,GOOD,none,"The abstract explicitly states that the paper proposes treating ERC as a dialogue-based RE task, which is a concrete contribution.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+9,GOOD,none,The claim is supported by the abstract and describes a concrete application of the paper's findings.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+10,GOOD,none,"The claim is supported by the abstract, describes a finding of the paper, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+11,BAD,overgeneralized,"The claim overgeneralizes the results by stating it establishes a universal solution across tasks, domains, and languages, which is not supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+12,GOOD,none,The claim accurately describes a novel method contribution introduced by the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+13,GOOD,none,"The claim accurately reflects an empirical analysis performed by the paper, which is a valid contribution.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+14,GOOD,none,The claim is supported by the abstract as an empirical finding of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+15,GOOD,none,The claim accurately describes the contribution of the new benchmark datasets as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+16,BAD,background_context,"The first part of the claim is background context, and the second part is a specific finding that is not directly supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+17,BAD,unsupported,The claim includes specific performance metrics (F1 score increase and latency decrease) that are not mentioned in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+18,GOOD,none,"The claim is supported, describes a concrete contribution (an algorithm), and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+19,BAD,unsupported,"The claim mentions a new benchmark, training objective, and theoretical guarantee, none of which are supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+20,GOOD,none,"The claim accurately describes the core contribution of knowledge distillation from a GNN to an NLP model for relational reasoning, as supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+21,GOOD,none,The claim accurately describes the benchmark introduced by the paper and its purpose.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+22,GOOD,none,The claim accurately describes a core component of the proposed method as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+23,BAD,unsupported,"The abstract does not mention a new benchmark, training objective, or theoretical guarantee.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+24,BAD,too_vague,The claim is too vague and does not specify the concrete contributions or improvements mentioned in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+25,BAD,too_vague,The claim is too vague and does not specify the concrete contribution or the nature of the improvement.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+26,GOOD,none,The claim accurately reflects the main finding of the paper as stated in the title and abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+27,GOOD,none,The claim is a specific finding supported by the abstract and describes a contribution of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+28,GOOD,none,The claim accurately summarizes a key finding about perplexity changes in retrieval-augmented models as described in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+29,BAD,not_self_contained,"The claim uses an introductory phrase 'In this paper, we claim that our approach achieves the following result:' which makes it not self-contained and also redundant.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+30,GOOD,none,The claim accurately describes the VideoFeedback dataset as a novel contribution of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+31,GOOD,none,"The claim accurately describes the contribution of VideoScore as an automatic metric trained on a specific dataset, which is directly supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+32,GOOD,none,The claim accurately reflects the empirical findings and contribution of the paper regarding the performance of VideoScore compared to prior metrics.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+33,GOOD,none,The claim accurately describes the core method introduced in the abstract and is self-contained.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+34,GOOD,none,"The claim accurately describes a contribution regarding joint training of a POS tagger, supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+35,GOOD,none,The claim is supported by the abstract and describes a concrete finding of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+36,GOOD,none,The claim accurately describes the resource contribution introduced by the paper and is well-supported by the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+37,BAD,unsupported,The abstract mentions synthetic multilingual data generation but does not mention a dual-memory neuro-symbolic verifier or clinical corpora.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+38,BAD,background_context,"The claim describes a general research direction and motivation, not a specific contribution of this paper.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+39,GOOD,none,"The claim accurately describes the initialization and fine-tuning procedure of the proposed Gamma-Guard method, which is a concrete contribution.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+40,GOOD,none,"The claim accurately describes the multimodal model contribution, its task, and the features used, as stated in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+41,GOOD,none,"The claim is supported, self-contained, and describes a concrete finding about feature interaction for a specific task.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+42,BAD,too_vague,The claim is too vague and does not specify the concrete contributions or improvements made by the proposed framework.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+43,BAD,not_self_contained,"The claim uses unresolved references like 'This method' and 'it', making it not self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+44,BAD,unsupported,"The abstract does not mention efficiency or typical evaluation settings, and the claim is too generic.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+45,GOOD,none,"The claim accurately describes a specific capability of the proposed method, which is supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+46,BAD,not_self_contained,"The claim uses unresolved references like 'this method' and 'it', making it not self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+47,GOOD,none,"The claim is supported by the abstract, describes a contribution-bearing result, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+48,BAD,unsupported,"The abstract does not mention introducing a new benchmark, a new training objective, or a formal theoretical guarantee.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+49,GOOD,none,The claim accurately describes a specific regularization technique and its purpose as presented in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+50,BAD,not_self_contained,The claim uses an unresolved reference 'our approach' and does not specify the contribution.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+51,BAD,background_context,The claim describes a general trend or issue rather than a specific contribution of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+52,GOOD,none,The claim accurately describes the core contribution of the proposed method for multi-aspect controllable text generation.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+53,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution (performance in a zero-shot setting), and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+54,GOOD,none,"The claim accurately describes a core mechanism of the proposed MetaTS network and its benefit, as supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+55,BAD,unsupported,The claim mentions a 'dual-memory neuro-symbolic verifier trained on 12 unseen clinical corpora' which is not supported by the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+56,GOOD,none,"The claim accurately describes a specific component of the proposed TextDDI approach and its function, which is supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+57,GOOD,none,The claim accurately describes a feature of the ProcWorld benchmark as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+58,GOOD,none,"The claim accurately describes a core contribution of the proposed method, which is supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+59,GOOD,none,"The claim is supported, contribution-bearing, and describes a specific component of the proposed method.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+60,GOOD,none,The claim accurately describes a training procedure contribution mentioned in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+61,GOOD,none,"The claim is supported, self-contained, and describes a concrete contribution (a novel reward function).",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+62,GOOD,none,The claim is supported by the abstract and describes a concrete contribution of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+63,GOOD,none,"The claim is supported, contribution-bearing, and self-contained, describing the core unsupervised learning contribution of SemCSE.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+64,GOOD,none,"The claim accurately describes a core mechanism of the proposed SemCSE method, which is supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+65,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution of the proposed method, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+66,GOOD,none,The claim accurately describes a novel benchmark introduced by the paper to assess semantic understanding of scientific texts.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+67,GOOD,none,The claim is a direct and accurate statement of an empirical result presented in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+68,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+69,GOOD,none,"The claim accurately describes the EchoMist benchmark, its purpose, and its data sources as presented in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+70,BAD,not_self_contained,"The claim uses unresolved references like 'this method' and 'it', making it not self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+71,GOOD,none,"The claim accurately describes the core mechanism and benefit of the proposed Balcony framework, which is supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+72,BAD,unsupported,The claim mentions a 'dual-memory neuro-symbolic verifier trained on 12 unseen clinical corpora' which is not supported by the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+73,GOOD,none,The claim accurately describes a core contribution of the proposed HAHSum method as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+74,GOOD,none,The claim accurately describes a specific contribution of the proposed HAHSum method as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+75,GOOD,none,"The claim accurately describes a specific mechanism of the proposed HAHSum method, which is supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+76,GOOD,none,The claim is a direct and supported statement of the paper's empirical contribution.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+77,GOOD,none,"The claim accurately summarizes a key finding about LLM performance on perturbed Chinese text, as stated in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+78,GOOD,none,"The claim accurately describes a contribution of the paper: a BERT model for Ancient Greek that discovers statistical properties relevant to literary, philosophical, and historical problems.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+79,GOOD,none,"The claim is supported by the abstract, describes a concrete analysis performed by the paper, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+80,BAD,unsupported,The abstract does not mention a proposed framework or discuss efficiency.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+81,GOOD,none,The claim accurately describes the proposed method and its contribution as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+82,GOOD,none,"The claim accurately describes a core component of the proposed method, SDS-CLIP, and is well-supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+83,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution (method improvement), and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+84,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+85,BAD,not_self_contained,"The claim uses unresolved references like 'this method' and 'it', making it not self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+86,BAD,not_self_contained,The claim uses an unresolved reference 'our approach' and 'The proposed model'.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+87,BAD,too_vague,The claim is too vague and does not specify the concrete contribution or the method.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+88,BAD,too_vague,The claim is too vague and does not specify any concrete contribution or finding from the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+89,GOOD,none,"The claim accurately describes a component of the WinoLogic dataset, which is a contribution of the paper.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+90,GOOD,none,The claim is a direct and supported finding about the impact of counterfactually augmented data on model performance.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+91,GOOD,none,"The claim is supported by the abstract, describes a concrete finding, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+92,GOOD,none,The claim is supported by the abstract and describes a novel resource contribution.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+93,GOOD,none,"The claim is supported by the abstract, describes a concrete finding about data augmentation, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+94,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution (outperforming baselines), and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+95,BAD,too_vague,The claim is too vague and does not specify the concrete contributions of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+96,BAD,not_self_contained,"The claim uses unresolved references like 'This method' and 'it', making it not self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+97,GOOD,none,The claim accurately describes a specific algorithmic contribution mentioned in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+98,GOOD,none,"The claim accurately describes the dataset contribution, its purpose, and its components as stated in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+99,GOOD,none,The claim accurately describes the contribution of the TIE method as presented in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+100,GOOD,none,"The claim accurately describes a specific component of the proposed method (TIE) and its function, which is directly supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+101,GOOD,none,"The claim accurately describes a specific component and its function within the proposed TIE method, which is a contribution of the paper.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+102,GOOD,none,The claim accurately describes the contribution of the TIE method as presented in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+103,BAD,unsupported,The claim mentions a 'dual-memory neuro-symbolic verifier trained on 12 unseen clinical corpora' which is not supported by the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+104,GOOD,none,"The claim is supported by the abstract, describes a concrete finding, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+105,GOOD,none,The claim accurately describes a contribution of the paper regarding entropy-stable attention methods.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+106,GOOD,none,"The claim is directly supported by the abstract and describes a specific finding about the relationship between attention probabilities, matrix norm, and gradient explosion.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+107,BAD,unsupported,The abstract mentions improvements over log loss fine-tuning but does not provide specific numerical scores or latency percentages.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+108,BAD,background_context,"The first part of the claim about NLP being challenging is background context, and the second part is too vague about how Pico supports iterative design and analysis.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+109,BAD,not_self_contained,"The claim uses unresolved references like 'this method' and 'it', making it not self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+110,GOOD,none,"The claim accurately describes the core contribution of the paper, which is reframing event extraction as a machine reading comprehension problem.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+111,GOOD,none,The claim accurately describes a specific component of the proposed method and is well-supported by the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+112,GOOD,none,"The claim accurately summarizes a key contribution and finding of the paper, supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+113,GOOD,none,"The claim is supported, contribution-bearing, and self-contained, accurately reflecting a key finding about the proposed approach in data-scarce scenarios.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+114,BAD,unsupported,The abstract mentions outperforming the state-of-the-art but does not provide specific scores or latency metrics.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+115,GOOD,none,"The claim accurately describes the proposed method, its components, and its application, all of which are supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+116,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution of the CARMA method, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+117,GOOD,none,"The claim accurately summarizes the proposed method and its superior performance compared to existing methods, as stated in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+118,GOOD,none,The claim is supported by the abstract and describes a specific finding about the Unigram algorithm.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+119,GOOD,none,The claim accurately describes a core component of the proposed MS-RAG method as detailed in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+120,GOOD,none,The claim accurately describes a specific algorithmic contribution of MS-RAG mentioned in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+121,GOOD,none,"The claim is supported, self-contained, and describes a concrete component of the proposed method.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+122,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution (faster inference speed), and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+123,BAD,background_context,"The claim describes a known problem or vulnerability that motivates the paper's work, rather than a contribution made by the paper itself.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+124,BAD,background_context,"The claim that NLP remains challenging is background context, not a contribution of this paper.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+125,GOOD,none,The claim accurately describes the proposed method and its capabilities as presented in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+126,GOOD,none,The claim accurately describes the core mechanism and benefit of the proposed method as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+127,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution of the proposed method, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+128,GOOD,none,The claim is supported by the abstract and describes a concrete contribution of the proposed method.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+129,GOOD,none,The claim accurately describes a contribution of the proposed method as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+130,GOOD,none,The claim accurately summarizes the proposed method's contribution and its experimental validation across various tasks and model types.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+131,GOOD,none,The claim accurately describes the denoising training approach and its mechanism as presented in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+132,GOOD,none,"The claim accurately summarizes the proposed denoising training approach and its empirical results, which are clearly stated in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+133,GOOD,none,"The claim accurately describes a specific mechanism introduced by the RAG-Zeval framework, which is supported by the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+134,GOOD,none,The claim is supported by the abstract and describes an empirical finding established by the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+135,BAD,not_self_contained,"The claim uses unresolved references like 'this method' and 'it', making it not self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+136,GOOD,none,"The claim is supported, self-contained, and describes a concrete method contribution.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+137,BAD,background_context,The claim describes a general trend or motivation rather than a specific contribution of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+138,GOOD,none,The claim is a direct finding supported by the abstract and describes a concrete contribution.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+139,GOOD,none,"The claim accurately describes the core mechanism of the proposed CAPT method, which is a direct contribution of the paper.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+140,GOOD,none,"The claim is a direct and supported finding from the abstract, describing a counter-intuitive result.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+141,GOOD,none,"The claim accurately describes the core contribution of the proposed method, AdapterShare, as stated in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+142,GOOD,none,"The claim is supported by the abstract, describes a contribution-bearing method, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+143,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution of the Self-StrAE variant, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+144,GOOD,none,The claim accurately describes the core method contribution of the paper and is well-supported by the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+145,GOOD,none,The claim accurately summarizes the core contribution of the proposed system as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+146,GOOD,none,The claim is supported by the abstract and describes a contribution to the evaluation of AED methods.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+147,BAD,background_context,"The claim describes a limitation of existing methods that motivates the paper's work, rather than a contribution of the paper itself.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+148,GOOD,none,"The abstract explicitly states this finding about existing methods, presenting it as a motivation for their proposed method.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+149,GOOD,none,The claim accurately describes the proposed method and its core mechanism as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+150,GOOD,none,The claim is supported by the abstract and describes a concrete analysis contribution of the proposed method.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+151,GOOD,none,The claim accurately describes a specific method component and its purpose as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+152,GOOD,none,"The claim describes a specific algorithm proposed by the paper to uncover commonsense relations, which is a concrete contribution.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+153,GOOD,none,The claim accurately summarizes the main contribution and its evaluated settings as stated in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+154,GOOD,none,"The claim is supported by the abstract, describes a concrete finding, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+155,GOOD,none,The claim is supported by the abstract and describes a specific finding about the composition of optimized prompts.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+156,BAD,unsupported,"The abstract mentions an F1-Score of 0.973 for simulated runs, but it does not mention the specific score increases or latency decreases claimed.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+157,BAD,unsupported,The claim includes specific performance metrics (F1 score increase and latency decrease) that are not mentioned in the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+158,BAD,too_vague,The claim is too vague and does not specify the concrete contribution or its performance.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+159,GOOD,none,"The claim accurately describes a core methodological contribution of the paper, leveraging syntactic information for TOWE.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+160,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution (a component to alleviate intention shift), and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+161,GOOD,none,"The claim is supported by the abstract, describes an empirical finding, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+162,GOOD,none,"The claim accurately describes the MMDiag dataset, its generation method, and its key features as presented in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+163,GOOD,none,"The claim is supported, contribution-bearing, and self-contained, describing a specific improvement to an existing system.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+164,GOOD,none,The claim accurately describes a core methodological contribution of the paper and is well-supported by the abstract.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+165,GOOD,none,The claim accurately reflects a specific empirical result and contribution of the proposed CABLE method.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+166,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+167,GOOD,none,The claim is supported by the abstract and describes a concrete contribution of the proposed scheme.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+168,GOOD,none,"The claim accurately describes the FinQA dataset, which is a core contribution of the paper.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+169,GOOD,none,The claim is a direct finding supported by the abstract and describes a concrete contribution of the paper.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+170,GOOD,none,The claim accurately describes a concrete contribution (a pipeline) introduced by the paper and is self-contained.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+171,GOOD,none,"The claim is supported by the abstract, describes a concrete contribution (a method and its outcome), and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+172,BAD,unsupported,The abstract does not mention a 'proposed framework' or discuss its efficiency.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+173,BAD,unsupported,"The abstract only supports the claim about increased tip routing accuracy; it does not mention a new benchmark, training objective, or theoretical guarantee.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+174,GOOD,none,"The claim is supported, contribution-bearing, and describes an empirical finding about the complementarity of templates and data flow graphs.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+175,GOOD,none,"The claim accurately describes a core method contribution of the paper, identifying the technique (SAEs) and its purpose (identifying toxicity-related directions for activation steering).",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+176,GOOD,none,"The claim is supported by the abstract, describes a contribution-bearing finding, and is self-contained.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+177,GOOD,none,"The claim accurately describes a core component of the proposed Hierarchical Evidence Set Modeling (HESM) framework, which is a direct contribution of the paper.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+178,GOOD,none,"The claim accurately describes the core contribution of the proposed HESM framework, including its function and methodology, as stated in the abstract.",high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+179,GOOD,none,The claim is supported by the abstract and describes a concrete empirical result of the proposed method.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00
+180,GOOD,none,The claim accurately describes a new measure introduced by the paper for assessing annotation proximity in LMTC.,high,google/gemini-2.5-flash-lite,2026-05-26T09:26:20.469159+00:00

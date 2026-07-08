@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drift Inspector — Scientific Drift via Atomic Contribution Claims</title>
+<style>
+  :root {
+    --bg: #faf9f6; --fg: #1a1a1a; --muted: #6b6b6b; --card: #ffffff;
+    --border: #e3e0d8; --accent: #2b5f75; --accent-soft: #eaf2f5;
+    --chip: #f0ede5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181a; --fg: #e8e6e1; --muted: #9a978f; --card: #1f2124;
+      --border: #33363b; --accent: #7fb3c8; --accent-soft: #22313a;
+      --chip: #2a2c30;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 17px/1.55 Georgia, 'Times New Roman', serif;
+    max-width: 880px; margin: 0 auto; padding: 48px 24px 64px;
+  }
+  h1 { font-size: 2.1rem; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 6px 0 28px; font-size: 1.05rem; }
+  p.pitch { margin-bottom: 32px; max-width: 62ch; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-bottom: 36px; }
+  a.card {
+    display: block; background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 20px; text-decoration: none; color: var(--fg);
+    transition: border-color .15s;
+  }
+  a.card:hover { border-color: var(--accent); }
+  a.card.soon { opacity: .65; pointer-events: none; }
+  .card h2 { font-size: 1.12rem; margin-bottom: 6px; color: var(--accent); }
+  .card .stats { font: 13px/1.5 ui-monospace, Consolas, monospace; color: var(--muted); margin-top: 10px; }
+  .card p { font-size: .95rem; }
+  .badge { display: inline-block; font: 11px/1 ui-monospace, Consolas, monospace;
+    background: var(--accent-soft); color: var(--accent); border-radius: 4px;
+    padding: 3px 7px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .05em; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+  .links a {
+    font: 14px/1 ui-monospace, Consolas, monospace; color: var(--fg);
+    background: var(--chip); border: 1px solid var(--border); border-radius: 6px;
+    padding: 8px 14px; text-decoration: none;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); }
+  .links a.soon { opacity: .55; pointer-events: none; }
+  footer { color: var(--muted); font-size: .85rem; border-top: 1px solid var(--border); padding-top: 18px; }
+  footer code { font-size: .8rem; }
+</style>
+</head>
+<body>
+  <h1>Drift Inspector</h1>
+  <p class="sub">Measuring and exploring scientific drift with Atomic Contribution Claims</p>
+
+  <p class="pitch">
+    An LLM distills every abstract into <strong>atomic contribution claims</strong> —
+    what a paper actually adds, stripped of motivation and boilerplate. Claims are
+    embedded, clustered across years, and served as an interactive map where every
+    field-level trend can be traced down to the individual claims and papers behind it.
+  </p>
+
+  <div class="cards">
+    <a class="card" href="https://hamyrappy.github.io/drift-inspector-acl/">
+      <span class="badge">Live demo</span>
+      <h2>*ACL main conferences 2018–2026</h2>
+      <p>Six major venues in one joint claim space — ACL, EMNLP, NAACL, EACL, COLING, AACL — with cross-venue comparison.</p>
+      <div class="stats">69,950 claims · 88 clusters · 15,457 papers · 6 venues</div>
+    </a>
+    <a class="card" href="https://hamyrappy.github.io/drift-inspector-emnlp/">
+      <span class="badge">Paper case study</span>
+      <h2>EMNLP 2020–2025</h2>
+      <p>The single-venue, year-balanced corpus analysed in depth in the EMNLP 2026 demo paper.</p>
+      <div class="stats">16,576 claims · 80 clusters · 4,488 papers</div>
+    </a>
+    <a class="card" href="https://huggingface.co/datasets/Hamyrappy/acl-anthology-atomic-claims">
+      <span class="badge">Dataset · Hugging Face</span>
+      <h2>Full ACL Anthology</h2>
+      <p>Every abstract in the Anthology, 1963–2026, extracted into atomic claims. Released as a dataset on Hugging Face.</p>
+      <div class="stats">346,010 claims · 80,144 papers · 423 venues</div>
+    </a>
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/hamyrappy/drift-inspector">GitHub — code &amp; data</a>
+    <a class="soon" href="#">Paper (EMNLP 2026 demo, under review)</a>
+    <a href="https://huggingface.co/datasets/Hamyrappy/acl-anthology-atomic-claims">Dataset — full ACL Anthology</a>
+    <a href="https://huggingface.co/datasets/Hamyrappy/emnlp-2020-2025-atomic-claims">Dataset — EMNLP 2020–2025 + clusters</a>
+  </div>
+
+  <footer>
+    Code: MIT · Claim datasets: CC BY 4.0 (derived from ACL Anthology abstracts, CC BY 4.0).<br>
+    Any venue with titles and abstracts can be mapped with one extraction pass — see the repository for the pipeline.
+  </footer>
+</body>
+</html>

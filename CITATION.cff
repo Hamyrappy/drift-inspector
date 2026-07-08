@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use Drift Inspector or the ACC datasets, please cite the paper below."
+title: "Drift Inspector"
+authors:
+  - family-names: Karimov
+    given-names: Vsevolod
+  - family-names: Ostarkov
+    given-names: Stepan
+  - family-names: Poroshina
+    given-names: Anastasia
+  - family-names: Frolov
+    given-names: Anatoly
+  - family-names: Panchenko
+    given-names: Alexander
+repository-code: "https://github.com/hamyrappy/drift-inspector"
+url: "https://hamyrappy.github.io/drift-inspector/"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Drift Inspector: Exploring and Measuring Scientific Drift with Atomic Contribution Claims"
+  authors:
+    - family-names: Karimov
+      given-names: Vsevolod
+    - family-names: Ostarkov
+      given-names: Stepan
+    - family-names: Poroshina
+      given-names: Anastasia
+    - family-names: Frolov
+      given-names: Anatoly
+    - family-names: Panchenko
+      given-names: Alexander
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations"
+  year: 2026
+  notes: "Under review"

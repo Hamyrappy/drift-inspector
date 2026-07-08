@@ -1,0 +1,13 @@
+# Drift Inspector — public repository.
+# Datasets, JSON and the baked HTML build are tracked on purpose; only
+# environment / cache junk is ignored here.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv*/
+.env
+.envrc
+.DS_Store
+Thumbs.db
+# regenerable embedding / UMAP caches written into artifacts/ by `acc all`
+*.npy

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drift Inspector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/inspector.css?v=12">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============================ MASTHEAD ============================ -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-title" id="brand-title">Drift Inspector</span>
+      <span class="brand-sub" id="brand-sub"></span>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-view="map" role="tab">Map</button>
+      <button class="tab" data-view="trends" role="tab">Trends</button>
+      <button class="tab" data-view="clusters" role="tab">Clusters</button>
+      <button class="tab" data-view="compare" role="tab">Compare</button>
+      <button class="tab" data-view="methods" role="tab">Methods</button>
+    </nav>
+    <div class="topbar-right">
+      <span class="corpus-meta" id="corpus-meta"></span>
+      <button class="theme-toggle" id="theme-toggle" title="Toggle light / dark"></button>
+    </div>
+  </header>
+
+  <!-- ============================ MAP VIEW ============================ -->
+  <section class="view active" id="view-map">
+
+    <div class="map-controls">
+      <div class="seg" id="year-buttons" title="Filter claims by year"></div>
+      <div class="ctl-divider"></div>
+      <div class="ctl-cluster">
+        <span class="ctl-label">COLOR</span>
+        <div class="seg" id="color-buttons"></div>
+      </div>
+      <div class="ctl-divider"></div>
+      <div class="display-wrap">
+        <button class="display-btn" id="display-btn">Display <span class="caret">▼</span></button>
+        <div class="display-pop" id="display-pop" hidden>
+          <label class="display-opt">
+            <input type="checkbox" id="toggle-labels" checked>
+            <span>Cluster labels<br><span class="sub">boxed names on the 15 biggest clusters</span></span>
+          </label>
+          <label class="display-opt">
+            <input type="checkbox" id="toggle-noise" checked>
+            <span>Unclustered claims<br><span class="sub">one-off claims, not in any cluster (<span id="noise-pct">—</span> of all)</span></span>
+          </label>
+          <label class="display-opt">
+            <input type="checkbox" id="toggle-autofit">
+            <span>Auto-fit on filter<br><span class="sub">refit the view when filters change; off keeps the viewport put</span></span>
+          </label>
+        </div>
+      </div>
+      <div class="display-wrap">
+        <button class="display-btn" id="sources-btn">Sources <span class="caret">▼</span></button>
+        <div class="display-pop" id="sources-pop" hidden></div>
+      </div>
+      <button class="help-btn" id="map-help" title="How to read this map" aria-label="How to read this map">?</button>
+      <div class="search-wrap">
+        <div class="search-box">
+          <input type="text" id="map-search" placeholder="Search claims &amp; titles…">
+          <span class="search-kbd">⌘K</span>
+        </div>
+        <div class="search-pop" id="search-top" hidden></div>
+      </div>
+    </div>
+
+    <div class="map-body">
+      <div class="map-plot-wrap" id="map-plot-wrap">
+        <div class="map-plot" id="map-plot"></div>
+
+        <!-- guided intro overlay -->
+        <div class="intro-overlay" id="intro-overlay" hidden>
+          <div class="intro-card">
+            <div class="intro-eyebrow" id="intro-count"></div>
+            <div class="intro-title">Reading the claim map</div>
+            <div class="intro-steps">
+              <div class="intro-step"><span class="intro-num">01</span><span class="txt">Every point is one <b>contribution claim</b> — a single thing a paper says it contributed, pulled from its abstract.</span></div>
+              <div class="intro-step"><span class="intro-num">02</span><span class="txt"><b>Points close together make similar claims.</b> Color groups them into clusters — use the legend on the right to focus on one.</span></div>
+              <div class="intro-step"><span class="intro-num">03</span><span class="txt">Switch <b>color</b> to <i>Drift</i> to see what's <span class="up-c" style="font-weight:600">growing</span> vs <span class="down-c" style="font-weight:600">declining</span> since <span id="intro-year0">the first year</span>. Hover a point to read its claim; click to pin it with a link to the paper.</span></div>
+            </div>
+            <div class="intro-actions">
+              <button class="btn-primary" id="intro-dismiss">Explore the map</button>
+              <button class="link" id="intro-methods">Read the methods →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="legend-aside">
+        <div class="legend-head">
+          <div class="legend-head-row">
+            <span class="ttl">CLUSTERS</span>
+          </div>
+          <input type="text" class="field" id="legend-filter" placeholder="Filter clusters…">
+        </div>
+        <div class="legend-list" id="legend-list"></div>
+        <div class="legend-foot">
+          <span class="legend-foot-hint">click to focus · ctrl/⌘-click to combine</span>
+          <button class="link" id="legend-reset">Reset</button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="map-hint">
+      <span id="map-search-count"></span>
+      <span class="spacer"></span>
+      <span class="hint-legend">hover a point for its claim · click to pin · drift: <span class="hint-sw down"></span> declining → <span class="hint-sw up"></span> growing</span>
+      <button class="link" id="reopen-intro" style="margin-left:12px">how to read this map</button>
+    </div>
+  </section>
+
+  <!-- =========================== TRENDS VIEW ========================== -->
+  <section class="view" id="view-trends">
+    <div class="trends-grid">
+
+      <div class="card">
+        <div class="card-head">
+          <span class="card-title" id="butterfly-title">Topic-share shift</span>
+          <span class="push row"><span class="ctl-label">TOP</span>
+            <select class="select" id="butterfly-topn">
+              <option value="5">5</option><option value="10" selected>10</option><option value="15">15</option>
+            </select>
+          </span>
+        </div>
+        <div class="card-sub">per direction · click a bar to plot its trajectory</div>
+        <div id="butterfly-plot"></div>
+      </div>
+
+      <div class="card start">
+        <div class="card-head">
+          <span class="card-title">Per-year trajectories</span>
+          <span class="push row" style="gap:12px">
+            <label class="check" title="Scale each trajectory to its own peak — compares growth shapes of differently sized clusters"><input type="checkbox" id="traj-normalize"> normalize</label>
+            <button class="link" id="traj-clear">Clear</button>
+          </span>
+        </div>
+        <div class="card-sub" id="traj-hint"></div>
+        <div id="traj-plot"></div>
+      </div>
+
+      <div class="card wide">
+        <div class="card-head">
+          <span class="card-title">All clusters at a glance</span>
+          <span class="card-sub">share of papers by year · click to add to trajectories · double-click for details</span>
+          <select class="select push" id="spark-sort">
+            <option value="delta-desc" selected>sort: growing first</option>
+            <option value="delta-asc">sort: declining first</option>
+            <option value="size">sort: cluster size</option>
+          </select>
+        </div>
+        <div class="spark-grid" id="spark-grid"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================== CLUSTERS VIEW ========================= -->
+  <section class="view" id="view-clusters">
+    <aside class="cluster-aside">
+      <div class="cluster-aside-head">
+        <input type="text" class="field" id="cluster-filter" placeholder="Find a cluster…">
+      </div>
+      <div class="cluster-list" id="cluster-list"></div>
+    </aside>
+    <div class="cluster-detail-pane" id="cluster-detail">
+      <div class="detail-empty">Select a cluster on the left — or double-click one anywhere in the app.</div>
+    </div>
+  </section>
+
+  <!-- =========================== COMPARE VIEW ========================= -->
+  <section class="view" id="view-compare">
+    <div class="compare-wrap" id="compare-body"></div>
+  </section>
+
+  <!-- =========================== METHODS VIEW ========================= -->
+  <section class="view" id="view-methods">
+    <div class="methods-wrap" id="methods-body"></div>
+  </section>
+
+</div>
+
+<!-- BAKE:DATA -->
+<script src="vendor/plotly.min.js"></script>
+<script src="js/data.js?v=14"></script>
+<script src="js/map.js?v=10"></script>
+<script src="js/trends.js?v=9"></script>
+<script src="js/cluster.js?v=13"></script>
+<script src="js/compare.js?v=16"></script>
+<script src="js/app.js?v=10"></script>
+</body>
+</html>

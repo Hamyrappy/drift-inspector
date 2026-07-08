@@ -1,0 +1,354 @@
+{
+  "0": {
+    "short": "Vision-Language Model Evaluation",
+    "full": "Evaluation and Benchmarking of Vision-Language Models"
+  },
+  "1": {
+    "short": "Multilingual Large Language Models",
+    "full": "Multilingual LLMs: Evaluation and Low-Resource Adaptation"
+  },
+  "2": {
+    "short": "Task-Oriented Dialogue Systems",
+    "full": "Task-Oriented Dialogue Modeling, Tracking, and Generation"
+  },
+  "3": {
+    "short": "Question Answering & Generation",
+    "full": "Unified Question Answering and Generation Models"
+  },
+  "4": {
+    "short": "Word and Sentence Embeddings",
+    "full": "Learning and Evaluating Word and Sentence Embeddings"
+  },
+  "5": {
+    "short": "Multilingual Neural Machine Translation",
+    "full": "Multilingual Neural Machine Translation Quality Improvement"
+  },
+  "6": {
+    "short": "Efficient Reasoning in LLMs",
+    "full": "Efficient Reasoning for Large Language Models"
+  },
+  "7": {
+    "short": "Summarization Evaluation",
+    "full": "Metrics and Benchmarks for Summarization Evaluation"
+  },
+  "8": {
+    "short": "Adversarial Attacks in NLP",
+    "full": "Adversarial Attacks and Defenses for NLP"
+  },
+  "9": {
+    "short": "Open-Source Model Benchmarks",
+    "full": "Open-Source Model and Benchmark Release for NLP"
+  },
+  "10": {
+    "short": "Dense Retrieval",
+    "full": "Neural Dense Retrieval for Document Search"
+  },
+  "11": {
+    "short": "Neural Parsing",
+    "full": "Neural Dependency, Constituency, and Semantic Parsing"
+  },
+  "12": {
+    "short": "Named Entity Recognition and Linking",
+    "full": "Joint Modeling of NER and Entity Linking"
+  },
+  "13": {
+    "short": "Political Stance Detection",
+    "full": "Political Stance Detection in Social Media and News"
+  },
+  "14": {
+    "short": "Aspect-Based Sentiment Analysis",
+    "full": "Aspect-Based Sentiment Analysis (ABSA)"
+  },
+  "15": {
+    "short": "Medical LLM Evaluation",
+    "full": "Evaluation and Benchmarking of Medical Large Language Models"
+  },
+  "16": {
+    "short": "Speech Foundation Models",
+    "full": "Large Pretrained Speech and Audio Language Models"
+  },
+  "17": {
+    "short": "Neural Text Generation",
+    "full": "Neural Text Generation: Models, Datasets, and Evaluation"
+  },
+  "18": {
+    "short": "Event Extraction",
+    "full": "Event Extraction, Argument and Relation Identification"
+  },
+  "19": {
+    "short": "LLM Multi-Agent Systems",
+    "full": "LLM Multi-Agent Systems: Architectures and Benchmarks"
+  },
+  "20": {
+    "short": "State-of-the-Art Performance",
+    "full": "State-of-the-Art Performance on Standard Benchmarks"
+  },
+  "21": {
+    "short": "Efficient Attention",
+    "full": "Efficient Attention Mechanisms for Neural Networks"
+  },
+  "22": {
+    "short": "Token Pruning",
+    "full": "Token Pruning and Dynamic Tokenization for Efficient LLMs"
+  },
+  "23": {
+    "short": "Text Classification",
+    "full": "Text Classification: Hierarchical, Multi-Label, Low-Resource"
+  },
+  "24": {
+    "short": "NLP Evaluation",
+    "full": "NLP Model Evaluation, Benchmarking, and Research Practices"
+  },
+  "25": {
+    "short": "Knowledge Graph Completion",
+    "full": "Knowledge Graph Completion via Embedding"
+  },
+  "26": {
+    "short": "Argument Mining",
+    "full": "Argument Mining, Quality Assessment, and Debate Systems"
+  },
+  "27": {
+    "short": "RLHF",
+    "full": "Reinforcement Learning from Human Feedback"
+  },
+  "28": {
+    "short": "Emotion Recognition",
+    "full": "Emotion Recognition and Classification in NLP"
+  },
+  "29": {
+    "short": "Relation Extraction",
+    "full": "Relation Extraction: Supervised, Distant, Document-Level"
+  },
+  "30": {
+    "short": "Natural Language Explanations",
+    "full": "Faithful Natural Language Explanations for NLP Models"
+  },
+  "31": {
+    "short": "Retrieval-Augmented Generation",
+    "full": "Retrieval-Augmented Generation: Methods and Evaluation"
+  },
+  "32": {
+    "short": "Neural Morphological Analysis",
+    "full": "Neural Morphological Segmentation, Tagging, and Inflection"
+  },
+  "33": {
+    "short": "Human-Aligned LLM Evaluation",
+    "full": "Human-Aligned Evaluation Metrics for Large Language Models"
+  },
+  "34": {
+    "short": "Language Model Distillation",
+    "full": "Knowledge Distillation for NLP Language Model Compression"
+  },
+  "35": {
+    "short": "Paraphrase Generation",
+    "full": "Unsupervised and Weakly Supervised Paraphrase Generation"
+  },
+  "36": {
+    "short": "Story Generation",
+    "full": "Story Generation: Models, Datasets, and Evaluation"
+  },
+  "37": {
+    "short": "Annotation Frameworks",
+    "full": "Annotation Frameworks for Low-Cost High-Quality Labeling"
+  },
+  "38": {
+    "short": "Coreference Resolution",
+    "full": "Neural Coreference Resolution and Benchmark Datasets"
+  },
+  "39": {
+    "short": "Automated Prompt Engineering",
+    "full": "Automated Prompt Engineering and Optimization"
+  },
+  "40": {
+    "short": "Discourse Parsing",
+    "full": "Neural Discourse Parsing and Implicit Relation Recognition"
+  },
+  "41": {
+    "short": "Grammatical Error Correction",
+    "full": "Grammatical Error Correction: Models, Datasets, and Evaluation"
+  },
+  "42": {
+    "short": "Question Answering Benchmarks",
+    "full": "State-of-the-Art Performance on Question Answering Benchmarks"
+  },
+  "43": {
+    "short": "Neural Topic Modeling",
+    "full": "Neural Topic Modeling for Coherence and Diversity"
+  },
+  "44": {
+    "short": "Gender Bias in NLP",
+    "full": "Gender Bias in Language Models and Machine Translation"
+  },
+  "45": {
+    "short": "Efficient Transformer Inference",
+    "full": "Techniques for Efficient Transformer Inference"
+  },
+  "46": {
+    "short": "Machine Reading Comprehension",
+    "full": "Machine Reading Comprehension Datasets and Evaluation"
+  },
+  "47": {
+    "short": "Label-Efficient Learning",
+    "full": "Label-Efficient Learning: Semi- and Weakly-supervised NLP"
+  },
+  "48": {
+    "short": "Few-Shot & Zero-Shot Classification",
+    "full": "Few-Shot and Zero-Shot Classification in NLP"
+  },
+  "49": {
+    "short": "Social Bias in LLMs",
+    "full": "Social and Cultural Bias in Large Language Models"
+  },
+  "50": {
+    "short": "LLM Code Generation",
+    "full": "Large Language Model Code Generation Benchmarks and Methods"
+  },
+  "51": {
+    "short": "Conversational Recommendation",
+    "full": "Conversational Recommendation with User Feedback and LLMs"
+  },
+  "52": {
+    "short": "Parameter-Efficient Training",
+    "full": "Parameter-Efficient Training for Large Language Models"
+  },
+  "53": {
+    "short": "Hallucination Detection",
+    "full": "Hallucination Detection for Large Language Models"
+  },
+  "54": {
+    "short": "Text-to-SQL Parsing",
+    "full": "Text-to-SQL Semantic Parsing and Generation with LLMs"
+  },
+  "55": {
+    "short": "Knowledge Editing",
+    "full": "Knowledge Editing for Large Language Models"
+  },
+  "56": {
+    "short": "Graph Neural Networks for NLP",
+    "full": "Graph Neural Networks for Natural Language Processing"
+  },
+  "57": {
+    "short": "Automated Fact-Checking",
+    "full": "Automated Fact-Checking with Claim Extraction and Retrieval"
+  },
+  "58": {
+    "short": "Efficient Decoding",
+    "full": "Efficient Decoding Strategies for Neural Text Generation"
+  },
+  "59": {
+    "short": "Metaphor Identification and Generation",
+    "full": "Metaphor Identification and Generation in NLP"
+  },
+  "60": {
+    "short": "Legal Judgment Prediction",
+    "full": "Legal Judgment Prediction and Benchmarking for LLMs"
+  },
+  "61": {
+    "short": "Generalizable NER",
+    "full": "Generalizable NER across Domains and Languages"
+  },
+  "62": {
+    "short": "Text Generation Improvements",
+    "full": "Techniques for Enhancing Text Generation Quality & Speed"
+  },
+  "63": {
+    "short": "Open-World Intent Detection",
+    "full": "Open-World Intent Detection and Slot Filling"
+  },
+  "64": {
+    "short": "Social Media Health Monitoring",
+    "full": "Mental Health and Drug Safety Detection from Social Media"
+  },
+  "65": {
+    "short": "Citation Text Generation",
+    "full": "Citation Text Generation and Evaluation for Scientific Writing"
+  },
+  "66": {
+    "short": "NLU Benchmarks",
+    "full": "Benchmark Datasets for Natural Language Understanding"
+  },
+  "67": {
+    "short": "LLM Quantization",
+    "full": "Post-Training Quantization and KV Cache Compression for LLMs"
+  },
+  "68": {
+    "short": "Dialogue Response Generation",
+    "full": "Dialogue Response Generation for Quality and Diversity"
+  },
+  "69": {
+    "short": "In-Context Curriculum Learning",
+    "full": "Curriculum Learning for In-Context Learning in LLMs"
+  },
+  "70": {
+    "short": "Multimodal Humor & Sarcasm Detection",
+    "full": "Multimodal Humor and Sarcasm Detection in Social Media"
+  },
+  "71": {
+    "short": "Text Style Transfer",
+    "full": "Neural Text Style Transfer with Content Preservation"
+  },
+  "72": {
+    "short": "End-to-End Speech Translation",
+    "full": "End-to-End Speech Translation: Unsupervised, Simultaneous"
+  },
+  "73": {
+    "short": "Implicit Hate Speech Detection",
+    "full": "Implicit Hate Speech Detection and Benchmark Evaluation"
+  },
+  "74": {
+    "short": "Direct Preference Optimization",
+    "full": "Direct Preference Optimization for LLM Alignment"
+  },
+  "75": {
+    "short": "Open NLP Resources",
+    "full": "Public Release of Datasets, Code, and Models for NLP"
+  },
+  "76": {
+    "short": "Unified Information Extraction",
+    "full": "Unified Information Extraction Models for Multiple IE Tasks"
+  },
+  "77": {
+    "short": "Fact Checking",
+    "full": "Automated Fact-Checking and Fact Verification in NLP"
+  },
+  "78": {
+    "short": "Task Adaptive Pretraining",
+    "full": "Task and Domain Adaptive Pretraining for Transfer Learning"
+  },
+  "79": {
+    "short": "Text Simplification",
+    "full": "Text Simplification: Models, Datasets, and Metrics"
+  },
+  "80": {
+    "short": "Toxicity Detection & Mitigation",
+    "full": "Toxicity Detection and Mitigation in Textual Data"
+  },
+  "81": {
+    "short": "Arabic Language Model Benchmarks",
+    "full": "Arabic Language Model Benchmarks and Open-Source Datasets"
+  },
+  "82": {
+    "short": "Visually Rich Document Understanding",
+    "full": "Layout, Reading Order, and Hierarchy for Visually Rich Docs"
+  },
+  "83": {
+    "short": "Text-Based Game Agents",
+    "full": "Large Language Model Agents for Text-Based Game Environments"
+  },
+  "84": {
+    "short": "LLM Prompt Engineering",
+    "full": "Prompt Engineering and Tuning for Large Language Models"
+  },
+  "85": {
+    "short": "Instruction Tuning Datasets",
+    "full": "Construction and Selection of Instruction Tuning Datasets"
+  },
+  "86": {
+    "short": "Neuron Editing",
+    "full": "Neuron Editing for Efficient Model Adaptation"
+  },
+  "87": {
+    "short": "Sign Language Translation",
+    "full": "Sign Language Translation, Multilingual and Gloss-Free"
+  }
+}

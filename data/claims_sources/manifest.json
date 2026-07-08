@@ -1,0 +1,122 @@
+{
+  "schema_version": "2.0",
+  "sources": [
+    {
+      "id": "acl_all",
+      "name": "ACL (all years)",
+      "venue": "ACL",
+      "roles": [
+        "clustering",
+        "display",
+        "compare"
+      ],
+      "color": "#9467bd",
+      "paths": {
+        "claims": "acl_all/claims.csv",
+        "papers": "acl_all/papers.csv"
+      }
+    },
+    {
+      "id": "emnlp_all",
+      "name": "EMNLP (all years)",
+      "venue": "EMNLP",
+      "roles": [
+        "clustering",
+        "display",
+        "compare"
+      ],
+      "color": "#1f77b4",
+      "paths": {
+        "claims": "emnlp_all/claims.csv",
+        "papers": "emnlp_all/papers.csv"
+      }
+    },
+    {
+      "id": "naacl_all",
+      "name": "NAACL (all years)",
+      "venue": "NAACL",
+      "roles": [
+        "clustering",
+        "display",
+        "compare"
+      ],
+      "color": "#2ca02c",
+      "paths": {
+        "claims": "naacl_all/claims.csv",
+        "papers": "naacl_all/papers.csv"
+      }
+    },
+    {
+      "id": "eacl_all",
+      "name": "EACL (all years)",
+      "venue": "EACL",
+      "roles": [
+        "clustering",
+        "display",
+        "compare"
+      ],
+      "color": "#d62728",
+      "paths": {
+        "claims": "eacl_all/claims.csv",
+        "papers": "eacl_all/papers.csv"
+      }
+    },
+    {
+      "id": "coling_all",
+      "name": "COLING (all years)",
+      "venue": "COLING",
+      "roles": [
+        "clustering",
+        "display",
+        "compare"
+      ],
+      "color": "#ff7f0e",
+      "paths": {
+        "claims": "coling_all/claims.csv",
+        "papers": "coling_all/papers.csv"
+      }
+    },
+    {
+      "id": "aacl_all",
+      "name": "AACL (all years)",
+      "venue": "AACL",
+      "roles": [
+        "clustering",
+        "display",
+        "compare"
+      ],
+      "color": "#17becf",
+      "paths": {
+        "claims": "aacl_all/claims.csv",
+        "papers": "aacl_all/papers.csv"
+      }
+    }
+  ],
+  "clustering": {
+    "sources": [
+      "acl_all",
+      "emnlp_all",
+      "naacl_all",
+      "eacl_all",
+      "coling_all",
+      "aacl_all"
+    ],
+    "clusters_file": "../clusters/acc_clusters.csv",
+    "balance": {
+      "note": "main-conf (venue,year) stratified subsample, 2018+",
+      "target_claims": 70000,
+      "seed": 42,
+      "min_year": 2018
+    }
+  },
+  "display": {
+    "sources": [
+      "acl_all",
+      "emnlp_all",
+      "naacl_all",
+      "eacl_all",
+      "coling_all",
+      "aacl_all"
+    ]
+  }
+}
