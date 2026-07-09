@@ -392,10 +392,11 @@ window.CompareView = (function () {
     });
     let maxRank = 1;
     top.forEach(c => years.forEach((_, i) => { const r = rankByYear[i].get(c); if (r) maxRank = Math.max(maxRank, r); }));
-    // Label only real ranks (1..maxRank) — the single minimal tweak vs. the
-    // original bump styling, so an autoranged axis never prints a 0/negative tick.
+    // Label only real ranks (1..maxRank), thinned so a deep-diving cluster
+    // (rank 60+) can't flood the axis with one tick per rank.
     const rankTicks = [];
-    for (let r = 1; r <= maxRank; r++) rankTicks.push(r);
+    const rankStep = maxRank > 14 ? Math.ceil(maxRank / 10) : 1;
+    for (let r = 1; r <= maxRank; r += rankStep) rankTicks.push(r);
     const p = ACC.pal();
     // Solid between consecutive years; dashed ONLY across years the cohort didn't
     // run (e.g. a biennial venue), not across the whole line.
