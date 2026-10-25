@@ -4,10 +4,11 @@
 
 | | |
 |---|---|
+| 🆕 **New version** | https://drift.autumnfleet.com/i/all-conf/ — NeurIPS, ICML, ICLR, CVPR, ICCV, ECCV and ACL Anthology venues · 2018–2026 · 117,888 papers, 570,179 claims (same corpora in the classic viewer: https://drift.hamyrappy.com/) |
 | 🌐 **Live demo** | https://hamyrappy.github.io/drift-inspector-acl/ — ACL, EMNLP, NAACL, EACL, COLING, AACL · 2018–2026 |
 | 🔗 **Project page** | https://hamyrappy.github.io/drift-inspector/ |
 | 🗺 **Paper case study** | https://hamyrappy.github.io/drift-inspector-emnlp/ — EMNLP 2020–2025 |
-| 📄 **Paper** | EMNLP 2026 System Demonstrations (under review) |
+| 📄 **Paper** | Accepted at EMNLP 2026 System Demonstrations · [arXiv:2609.39710](https://arxiv.org/abs/2609.39710) |
 | 🤗 **Datasets** | [full ACL Anthology](https://huggingface.co/datasets/Hamyrappy/acl-anthology-atomic-claims) — 346k claims, 423 venues · [EMNLP 2020–2025 + clusters](https://huggingface.co/datasets/Hamyrappy/emnlp-2020-2025-atomic-claims) |
 
 Scientific abstracts mix contributions with background, motivation, and
@@ -204,6 +205,6 @@ Produced by the included notebooks — see [`notebooks/README.md`](notebooks/REA
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in
                Natural Language Processing: System Demonstrations},
   year      = {2026},
-  note      = {Under review}
+  note      = {To appear. arXiv:2609.39710}
 }
 ```
