@@ -8,7 +8,7 @@
 | 🌐 **Live demo** | https://hamyrappy.github.io/drift-inspector-acl/ — ACL, EMNLP, NAACL, EACL, COLING, AACL · 2018–2026 |
 | 🔗 **Project page** | https://hamyrappy.github.io/drift-inspector/ |
 | 🗺 **Paper case study** | https://hamyrappy.github.io/drift-inspector-emnlp/ — EMNLP 2020–2025 |
-| 📄 **Paper** | Accepted at EMNLP 2026 System Demonstrations · [arXiv:2609.39710](https://arxiv.org/abs/2609.39710) |
+| 📄 **Paper** | EMNLP 2026 System Demonstrations · [ACL Anthology](https://aclanthology.org/2026.emnlp-demos.13/) · [arXiv:2609.39710](https://arxiv.org/abs/2609.39710) |
 | 🤗 **Datasets** | [full ACL Anthology](https://huggingface.co/datasets/Hamyrappy/acl-anthology-atomic-claims) — 346k claims, 423 venues · [EMNLP 2020–2025 + clusters](https://huggingface.co/datasets/Hamyrappy/emnlp-2020-2025-atomic-claims) |
 
 Scientific abstracts mix contributions with background, motivation, and
@@ -197,7 +197,7 @@ Produced by the included notebooks — see [`notebooks/README.md`](notebooks/REA
 ## Citation
 
 ```bibtex
-@inproceedings{karimov2026driftinspector,
+@inproceedings{karimov-etal-2026-drift,
   title     = {Drift Inspector: Exploring and Measuring Scientific Drift
                with Atomic Contribution Claims},
   author    = {Karimov, Vsevolod and Ostarkov, Stepan and Poroshina, Anastasia
@@ -205,6 +205,9 @@ Produced by the included notebooks — see [`notebooks/README.md`](notebooks/REA
   booktitle = {Proceedings of the 2026 Conference on Empirical Methods in
                Natural Language Processing: System Demonstrations},
   year      = {2026},
-  note      = {To appear. arXiv:2609.39710}
+  address   = {Budapest, Hungary},
+  publisher = {Association for Computational Linguistics},
+  pages     = {138--148},
+  url       = {https://aclanthology.org/2026.emnlp-demos.13/}
 }
 ```

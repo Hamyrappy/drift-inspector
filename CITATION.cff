@@ -31,4 +31,6 @@ preferred-citation:
       given-names: Alexander
   collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing: System Demonstrations"
   year: 2026
-  notes: "To appear. arXiv:2609.39710"
+  start: 138
+  end: 148
+  url: "https://aclanthology.org/2026.emnlp-demos.13/"
