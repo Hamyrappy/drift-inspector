@@ -280,18 +280,22 @@ window.CompareView = (function () {
 
   function drawDiverging(div, rows, cA, cB) {
     const p = ACC.pal();
-    const r = rows.slice().sort((x, y) => x.d - y.d);          // B-leaning at the bottom
+    const r = rows.slice().sort((x, y) => x.d - y.d);          // A-leaning rows end up on top
+    // The x-axis is REVERSED so A-leaning bars extend LEFT — matching A's
+    // position everywhere else on the page (cohort card A on the left,
+    // "A leans toward" box on the left). Values and hovers stay true-signed.
     Plotly.react(div, [{
       type: 'bar', orientation: 'h', y: r.map(x => x.label), x: r.map(x => +x.d.toFixed(2)),
       marker: { color: r.map(x => x.d >= 0 ? cA : cB) },
       customdata: r.map(x => [x.a, x.b]),
       text: r.map(x => (x.d >= 0 ? '+' : '') + x.d.toFixed(1)), textposition: 'outside',
       textfont: { size: 9, color: p.fnt }, cliponaxis: false,
-      hovertemplate: `<b>%{y}</b><br>${ACC.escapeHtml(cohortLabel(A))}: %{customdata[0]:.1f}%25 · ` +
-        `${ACC.escapeHtml(cohortLabel(B))}: %{customdata[1]:.1f}%25<br>Δ %{x:+.1f} pp<br><span style="font-size:10px">click for its papers →</span><extra></extra>`,
+      hovertemplate: `<b>%{y}</b><br>${ACC.escapeHtml(cohortLabel(A))}: %{customdata[0]:.1f}% · ` +
+        `${ACC.escapeHtml(cohortLabel(B))}: %{customdata[1]:.1f}%<br>Δ %{x:+.1f} pp<br><span style="font-size:10px">click for its papers →</span><extra></extra>`,
     }], ACC.plBase({
       height: Math.max(280, r.length * 24 + 60), margin: { l: 200, r: 46, t: 8, b: 40 },
-      xaxis: { title: { text: `◀ ${cohortLabel(B)}   ·   Δ ${metricWord()}   ·   ${cohortLabel(A)} ▶`, font: { size: 10, color: p.mut } },
+      xaxis: { title: { text: `◀ ${cohortLabel(A)}   ·   Δ ${metricWord()}   ·   ${cohortLabel(B)} ▶`, font: { size: 10, color: p.mut } },
+               autorange: 'reversed',
                zeroline: true, zerolinecolor: p.line2, gridcolor: p.line, tickfont: { size: 9.5, color: p.fnt } },
       yaxis: { tickfont: { size: 10.5, color: p.ink2 }, gridcolor: 'rgba(0,0,0,0)', automargin: true },
       bargap: 0.3,
@@ -332,7 +336,7 @@ window.CompareView = (function () {
         text: rows.map(r => r.label), textposition: 'top center', textfont: { size: 8.5, color: p.fnt },
         marker: { size: 9, color: rows.map(r => r.d >= 0 ? cA : cB), line: { width: 0.5, color: p.plot } },
         customdata: rows.map(r => r.c),
-        hovertemplate: `<b>%{text}</b><br>${ACC.escapeHtml(cohortLabel(A))}: %{x:.1f}%25 · ${ACC.escapeHtml(cohortLabel(B))}: %{y:.1f}%25<br><span style="font-size:10px">click for its papers →</span><extra></extra>` },
+        hovertemplate: `<b>%{text}</b><br>${ACC.escapeHtml(cohortLabel(A))}: %{x:.1f}% · ${ACC.escapeHtml(cohortLabel(B))}: %{y:.1f}%<br><span style="font-size:10px">click for its papers →</span><extra></extra>` },
     ], ACC.plBase({
       height: 440, margin: { l: 52, r: 20, t: 10, b: 46 },
       xaxis: { title: { text: cohortLabel(A) + ' · ' + metricWord(), font: { size: 10.5, color: p.mut } }, gridcolor: p.line, rangemode: 'tozero', tickfont: { size: 9.5, color: p.fnt }, ticksuffix: '%' },
