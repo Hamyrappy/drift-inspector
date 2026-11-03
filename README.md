@@ -155,11 +155,13 @@ The EMNLP corpus is mirrored there as ready-to-load parquet with its cluster
 assignments and per-cluster drift statistics
 ([emnlp-2020-2025-atomic-claims](https://huggingface.co/datasets/Hamyrappy/emnlp-2020-2025-atomic-claims)).
 
-Not shipped: the third-party SToP taxonomy used by the notebooks (from the
-ACL OCL corpus, Rohatgi et al., 2023; expected at
-`data/external/STop_topic_classification_dataset_for_scientific_papers.csv`),
-the raw EMNLP abstract dump (`data/raw/`) and the internal master sheet behind
-the human-validation sheets, and regenerable embedding caches (`*.npy`).
+The third-party SToP taxonomy (from the ACL OCL corpus, Rohatgi et al., 2023)
+is not shipped: `notebooks/baseline_comparison.ipynb` downloads it from
+[WINGNUS/ACL-OCL](https://huggingface.co/datasets/WINGNUS/ACL-OCL) on first run
+into `data/external/STop_topic_classification_dataset_for_scientific_papers.csv`.
+The EMNLP 2020–2025 abstracts it uses ship as
+`data/claims_sources/emnlp_full/papers.csv`. Not shipped: the internal master
+sheet behind the human-validation sheets and regenerable embedding caches (`*.npy`).
 Notebook cells that need an absent file skip themselves with a note; every
 headline number reproduces from the shipped files.
 
